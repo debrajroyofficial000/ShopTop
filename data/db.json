@@ -1,28 +1,29 @@
 {
-  "shoes": [
+  "footwears": [
     {
       "id": 1,
       "name": "Classic Oxford",
+      "url": "",
       "brand": "Sartorial",
-      "type": "Formal Shoes",
       "price": 99.99,
-      "description": "Elegant leather oxford shoes perfect for formal occasions.",
-      "color": "Black",
       "rating": 4.5,
-      "reviews": [
+      "is_trending": false,
+      "description": "Elegant leather oxford shoes perfect for formal occasions.",
+      "materials": "Genuine leather upper, leather lining, rubber sole",
+      "color": "Black",
+      "customer_reviews": [
         {
-          "id": 101,
           "username": "JohnDoe",
           "rating": 5,
           "comment": "Great quality shoes, very comfortable."
         },
         {
-          "id": 102,
           "username": "JaneSmith",
           "rating": 4,
           "comment": "Nice design, but a bit narrow for my feet."
         }
       ],
+      "season": "All Seasons",
       "faqs": [
         {
           "question": "Are these shoes true to size?",
@@ -32,33 +33,32 @@
           "question": "Can these shoes be resoled?",
           "answer": "Yes, they are resoleable."
         }
-      ],
-      "treadings": "Smooth",
-      "seasonal": false
+      ]
     },
     {
       "id": 2,
       "name": "Athletic Sneakers",
+      "url": "",
       "brand": "Sportify",
-      "type": "Sneakers",
       "price": 79.99,
-      "description": "Versatile sneakers designed for sports and everyday wear.",
-      "color": "White",
       "rating": 4.8,
-      "reviews": [
+      "is_trending": true,
+      "description": "Versatile sneakers designed for sports and everyday wear.",
+      "materials": "Mesh upper, EVA midsole, rubber outsole",
+      "color": "White",
+      "customer_reviews": [
         {
-          "id": 201,
           "username": "EmilyJohnson",
           "rating": 5,
           "comment": "Love these shoes! Very comfortable and stylish."
         },
         {
-          "id": 202,
           "username": "MikeBrown",
           "rating": 4.5,
           "comment": "Great for running and walking."
         }
       ],
+      "season": "Spring/Summer",
       "faqs": [
         {
           "question": "Are these shoes good for running?",
@@ -68,45 +68,1191 @@
           "question": "Do they come in other colors?",
           "answer": "Yes, they are available in black, blue, and red."
         }
-      ],
-      "treadings": "Textured",
-      "seasonal": false
+      ]
     },
     {
       "id": 3,
-      "name": "Casual Loafers",
-      "brand": "Relaxo",
-      "type": "Loafers",
-      "price": 49.99,
-      "description": "Comfortable slip-on loafers for casual wear.",
-      "color": "Brown",
+      "name": "Chelsea Boots",
+      "url": "",
+      "brand": "Sturdy Step",
+      "price": 149.99,
       "rating": 4.3,
-      "reviews": [
-        {
-          "id": 301,
-          "username": "SarahWilson",
-          "rating": 4,
-          "comment": "Nice loafers, but the sole is a bit thin."
-        },
-        {
-          "id": 302,
-          "username": "AlexMiller",
-          "rating": 4.5,
-          "comment": "Great value for money, very comfortable."
-        }
-      ],
+      "is_trending": false,
+      "description": "Sleek and stylish chelsea boots for a timeless look.",
+      "materials": "Leather upper, elasticated side panels, leather sole",
+      "color": "Tan",
+      "customer_reviews": [],
+      "season": "Fall/Winter",
       "faqs": [
         {
-          "question": "Are these loafers true to size?",
-          "answer": "Yes, we recommend ordering your usual size."
+          "question": "What size should I order?",
+          "answer": "We recommend ordering your true size. However, if you have wider feet, you may want to consider going up a half size."
         },
         {
-          "question": "Do they have arch support?",
-          "answer": "Yes, they provide decent arch support."
+          "question": "Are these boots waterproof?",
+          "answer": "These boots are not fully waterproof, but they do have water-resistant properties."
         }
-      ],
-      "treadings": "Ribbed",
-      "seasonal": false
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Platform Sandals",
+      "url": "",
+      "brand": "Sole Mates",
+      "price": 59.99,
+      "rating": 4.7,
+      "is_trending": true,
+      "description": "Comfortable platform sandals with a touch of height.",
+      "materials": "Synthetic upper, cork platform, rubber sole",
+      "color": "Black",
+      "customer_reviews": [],
+      "season": "Spring/Summer",
+      "faqs": [
+        {
+          "question": "Are these sandals comfortable for walking long distances?",
+          "answer": "These sandals offer moderate support and may not be ideal for long walks."
+        },
+        {
+          "question": "Do they come in other colors?",
+          "answer": "Yes, these sandals are also available in nude and metallic"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Leather Derby Shoes",
+      "url": "",
+      "brand": "Gentleman's Choice",
+      "price": 129.99,
+      "rating": 4.6,
+      "is_trending": true,
+      "description": "Classic derby shoes crafted from premium leather.",
+      "materials": "Full-grain leather upper, leather lining, leather sole",
+      "color": "Brown",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Are these shoes suitable for wide feet?",
+          "answer": "These shoes have a standard width, but the leather may stretch over time to accommodate slightly wider feet."
+        },
+        {
+          "question": "Do they require special care?",
+          "answer": "We recommend using a high-quality leather conditioner and polish to maintain the shoes' appearance."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Canvas Slip-On Sneakers",
+      "url": "",
+      "brand": "Casual Comfort",
+      "price": 49.99,
+      "rating": 4.2,
+      "is_trending": false,
+      "description": "Casual slip-on sneakers for relaxed everyday wear.",
+      "materials": "Canvas upper, textile lining, rubber sole",
+      "color": "Navy Blue",
+      "customer_reviews": [],
+      "season": "Spring/Summer",
+      "faqs": [
+        {
+          "question": "Are these sneakers machine washable?",
+          "answer": "We recommend spot cleaning these sneakers to preserve their shape and color."
+        },
+        {
+          "question": "Do they run true to size?",
+          "answer": "Yes, these sneakers typically run true to size."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Suede Desert Boots",
+      "url": "",
+      "brand": "Urban Explorer",
+      "price": 89.99,
+      "rating": 4.4,
+      "is_trending": true,
+      "description": "Stylish desert boots crafted from soft suede.",
+      "materials": "Suede upper, leather lining, crepe sole",
+      "color": "Sand",
+      "customer_reviews": [],
+      "season": "Fall/Spring",
+      "faqs": [
+        {
+          "question": "Can these boots be worn in wet weather?",
+          "answer": "While suede is not inherently waterproof, you can apply a waterproofing spray to protect these boots from light rain."
+        },
+        {
+          "question": "Do they provide good traction?",
+          "answer": "Yes, the crepe sole offers excellent traction on various surfaces."
+        }
+      ]
+    },
+    {
+      "id": 8,
+
+      "name": "Formal Monk Strap Shoes",
+      "url": "",
+      "brand": "Elegant Steps",
+      "price": 159.99,
+      "rating": 4.7,
+      "is_trending": false,
+      "description": "Sophisticated monk strap shoes for formal occasions.",
+      "materials": "Polished leather upper, leather lining, leather sole",
+      "color": "Burgundy",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Do these shoes come with a shoe horn?",
+          "answer": "Yes, each pair of shoes includes a complimentary shoe horn."
+        },
+        {
+          "question": "Are they suitable for wide feet?",
+          "answer": "These shoes have a standard width, but the adjustable monk strap allows for some flexibility in fit."
+        }
+      ]
+    },
+    {
+      "id": 9,
+
+      "name": "High-Top Leather Sneakers",
+      "url": "",
+      "brand": "Urban Edge",
+      "price": 109.99,
+      "rating": 4.5,
+      "is_trending": true,
+      "description": "Fashion-forward high-top sneakers made from premium leather.",
+      "materials": "Leather upper, textile lining, rubber sole",
+      "color": "Black",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Are these sneakers suitable for wide ankles?",
+          "answer": "The adjustable laces and padded collar provide a customizable fit for various ankle sizes."
+        },
+        {
+          "question": "Do they run large or small?",
+          "answer": "These sneakers typically run true to size, but if you're in between sizes, we recommend sizing up."
+        }
+      ]
+    },
+    {
+      "id": 10,
+
+      "name": "Leather Driving Moccasins",
+      "url": "",
+      "brand": "Leisure Drive",
+      "price": 79.99,
+      "rating": 4.3,
+      "is_trending": false,
+      "description": "Comfortable driving moccasins with a sleek, minimalist design.",
+      "materials": "Genuine leather upper, textile lining, rubber sole",
+      "color": "Brown",
+      "customer_reviews": [],
+      "season": "Spring/Summer",
+      "faqs": [
+        {
+          "question": "Do these moccasins have arch support?",
+          "answer": "While these moccasins are not specifically designed with arch support, the cushioned insole provides some comfort."
+        },
+        {
+          "question": "Can they be worn without socks?",
+          "answer": "Yes, the soft leather lining allows for comfortable sockless wear."
+        }
+      ]
+    },
+    {
+      "id": 11,
+
+      "name": "Chukka Boots",
+      "url": "",
+      "brand": "Rugged Terrain",
+      "price": 119.99,
+      "rating": 4.6,
+      "is_trending": true,
+      "description": "Versatile chukka boots suitable for casual or semi-formal occasions.",
+      "materials": "Suede upper, textile lining, rubber sole",
+      "color": "Gray",
+      "customer_reviews": [],
+      "season": "Fall/Winter",
+      "faqs": [
+        {
+          "question": "Do these boots have good ankle support?",
+          "answer": "While these boots provide some ankle support, they are best suited for casual wear rather than rigorous activities."
+        },
+        {
+          "question": "Are they easy to clean?",
+          "answer": "We recommend using a suede brush to remove dirt and stains from the suede upper."
+        }
+      ]
+    },
+    {
+      "id": 12,
+
+      "name": "Wingtip Brogues",
+      "url": "",
+      "brand": "Classic Elegance",
+      "price": 139.99,
+      "rating": 4.8,
+      "is_trending": true,
+      "description": "Timeless wingtip brogues with intricate detailing.",
+      "materials": "Polished leather upper, leather lining, leather sole",
+      "color": "Tan",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Are these brogues suitable for formal events?",
+          "answer": "Yes, these brogues are a classic"
+        }
+      ]
+    },
+    {
+      "id": 13,
+
+      "name": "Cap Toe Dress Shoes",
+      "url": "",
+      "brand": "Elegant Steps",
+      "price": 129.99,
+      "rating": 4.7,
+      "is_trending": true,
+      "description": "Sophisticated cap toe dress shoes for formal occasions.",
+      "materials": "Genuine leather upper, leather lining, leather sole",
+      "color": "Black",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Do these shoes come with a shoe horn?",
+          "answer": "Yes, each pair of shoes includes a complimentary shoe horn."
+        },
+        {
+          "question": "Are they suitable for wide feet?",
+          "answer": "These shoes have a standard width, but the cap toe design offers some room in the toe box."
+        }
+      ]
+    },
+    {
+      "id": 14,
+
+      "name": "Suede Loafers",
+      "url": "",
+      "brand": "Casual Comfort",
+      "price": 69.99,
+      "rating": 4.4,
+      "is_trending": false,
+      "description": "Relaxed suede loafers for casual everyday wear.",
+      "materials": "Suede upper, textile lining, rubber sole",
+      "color": "Beige",
+      "customer_reviews": [],
+      "season": "Spring/Summer",
+      "faqs": [
+        {
+          "question": "Can these loafers be worn sockless?",
+          "answer": "Yes, the soft suede lining provides comfort for sockless wear."
+        },
+        {
+          "question": "Do they stretch over time?",
+          "answer": "Suede tends to stretch slightly over time, providing a more customized fit."
+        }
+      ]
+    },
+    {
+      "id": 15,
+
+      "name": "Casual Boat Shoes",
+      "url": "",
+      "brand": "Seaside Style",
+      "price": 89.99,
+      "rating": 4.3,
+      "is_trending": false,
+      "description": "Classic boat shoes for a relaxed coastal look.",
+      "materials": "Leather upper, textile lining, rubber sole",
+      "color": "Navy Blue",
+      "customer_reviews": [],
+      "season": "Spring/Summer",
+      "faqs": [
+        {
+          "question": "Are these shoes suitable for wide feet?",
+          "answer": "These boat shoes have a standard width, but the adjustable laces allow for some customization in fit."
+        },
+        {
+          "question": "Do they provide good traction on wet surfaces?",
+          "answer": "Yes, the rubber sole is designed to provide grip on wet surfaces."
+        }
+      ]
+    },
+    {
+      "id": 16,
+
+      "name": "Leather Sandals",
+      "url": "",
+      "brand": "Urban Explorer",
+      "price": 79.99,
+      "rating": 4.5,
+      "is_trending": true,
+      "description": "Stylish leather sandals for warm-weather adventures.",
+      "materials": "Genuine leather upper, leather lining, rubber sole",
+      "color": "Brown",
+      "customer_reviews": [],
+      "season": "Spring/Summer",
+      "faqs": [
+        {
+          "question": "Do these sandals provide arch support?",
+          "answer": "Yes, the contoured footbed offers arch support for all-day comfort."
+        },
+        {
+          "question": "Are they suitable for beach wear?",
+          "answer": "These sandals are durable enough for beach wear, but we recommend rinsing off sand and saltwater after each use."
+        }
+      ]
+    },
+    {
+      "id": 17,
+
+      "name": "Slip-On Espadrilles",
+      "url": "",
+      "brand": "Coastal Comfort",
+      "price": 59.99,
+      "rating": 4.6,
+      "is_trending": true,
+      "description": "Casual slip-on espadrilles perfect for beach days.",
+      "materials": "Canvas upper, jute sole, rubber outsole",
+      "color": "Striped",
+      "customer_reviews": [],
+      "season": "Spring/Summer",
+      "faqs": [
+        {
+          "question": "Do these espadrilles have good arch support?",
+          "answer": "While these espadrilles do not have built-in arch support, they are lightweight and comfortable for casual wear."
+        },
+        {
+          "question": "Can they be machine washed?",
+          "answer": "We recommend spot cleaning these espadrilles to preserve their shape and color."
+        }
+      ]
+    },
+    {
+      "id": 18,
+
+      "name": "Suede Driving Shoes",
+      "url": "",
+      "brand": "Leisure Drive",
+      "price": 69.99,
+      "rating": 4.2,
+      "is_trending": false,
+      "description": "Stylish suede driving shoes for weekend getaways.",
+      "materials": "Suede upper, textile lining, rubber sole",
+      "color": "Tan",
+      "customer_reviews": [],
+      "season": "Spring/Summer",
+      "faqs": [
+        {
+          "question": "Do these driving shoes run true to size?",
+          "answer": "Yes, these shoes typically run true to size."
+        },
+        {
+          "question": "Can they be worn without socks?",
+          "answer": "Yes, the soft textile lining provides comfort for sockless wear."
+        }
+      ]
+    },
+    {
+      "id": 19,
+
+      "name": "Leather Chelsea Boots",
+      "url": "",
+      "brand": "Urban Explorer",
+      "price": 129.99,
+      "rating": 4.8,
+      "is_trending": true,
+      "description": "Timeless leather Chelsea boots for a versatile look.",
+      "materials": "Genuine leather upper, leather lining, rubber sole",
+      "color": "Black",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Do these boots have good ankle support?",
+          "answer": "Yes, the elasticated side panels provide excellent ankle support."
+        },
+        {
+          "question": "Are they suitable for dressier occasions?",
+          "answer": "Yes, these Chelsea boots can be dressed up or down for various occasions."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Leather Penny Loafers",
+      "url": "",
+      "brand": "Gentleman's Choice",
+      "price": 119.99,
+      "rating": 4.5,
+      "is_trending": false,
+      "description": "Classic penny loafers crafted from premium leather.",
+      "materials": "Full-grain leather upper, leather lining, leather sole",
+      "color": "Brown",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Are these loafers suitable for wide feet?",
+          "answer": "These loafers have a standard width, but the leather may stretch over time for a more comfortable fit."
+        },
+        {
+          "question": "Do they require special care?",
+          "answer": "We recommend using a leather conditioner and polish to maintain the shoes' appearance."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Leather Brogue Boots",
+      "url": "",
+      "brand": "Classic Elegance",
+      "price": 149.99,
+      "rating": 4.6,
+      "is_trending": true,
+      "description": "Stylish brogue boots crafted from supple leather.",
+      "materials": "Genuine leather upper, leather lining, rubber sole",
+      "color": "Black",
+      "customer_reviews": [],
+      "season": "Fall/Winter",
+      "faqs": [
+        {
+          "question": "Do these boots run true to size?",
+          "answer": "Yes, these boots typically run true to size."
+        },
+        {
+          "question": "Are they suitable for cold weather?",
+          "answer": "These boots are lined with leather for added warmth, making them suitable for colder climates."
+        }
+      ]
+    },
+    {
+      "id": 22,
+
+      "name": "Leather Ankle Boots",
+      "url": "",
+      "brand": "Urban Explorer",
+      "price": 109.99,
+      "rating": 4.7,
+      "is_trending": false,
+      "description": "Versatile leather ankle boots for a sleek urban look.",
+      "materials": "Genuine leather upper, leather lining, rubber sole",
+      "color": "Tan",
+      "customer_reviews": [],
+      "season": "Fall/Spring",
+      "faqs": [
+        {
+          "question": "Do these boots have good traction?",
+          "answer": "Yes, the rubber sole provides excellent traction on various surfaces."
+        },
+        {
+          "question": "Are they suitable for wide ankles?",
+          "answer": "The adjustable buckle straps allow for a customizable fit for different ankle sizes."
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Leather Combat Boots",
+      "url": "",
+      "brand": "Rugged Terrain",
+      "price": 159.99,
+      "rating": 4.8,
+      "is_trending": true,
+      "description": "Durable leather combat boots designed for rugged terrain.",
+      "materials": "Full-grain leather upper, textile lining, rubber sole",
+      "color": "Brown",
+      "customer_reviews": [],
+      "season": "Fall/Winter",
+      "faqs": [
+        {
+          "question": "Do these boots require a break-in period?",
+          "answer": "Some customers may experience a short break-in period due to the sturdy construction of these boots."
+        },
+        {
+          "question": "Can they be polished?",
+          "answer": "Yes, these boots can be polished to maintain their appearance."
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Leather Chelsea Boots",
+      "url": "",
+      "brand": "Stylish Steps",
+      "price": 139.99,
+      "rating": 4.6,
+      "is_trending": true,
+      "description": "Fashionable leather Chelsea boots for a modern look.",
+      "materials": "Genuine leather upper, leather lining, rubber sole",
+      "color": "Black",
+      "customer_reviews": [],
+      "season": "Fall/Winter",
+      "faqs": [
+        {
+          "question": "Do these boots run true to size?",
+          "answer": "Yes, these boots typically run true to size."
+        },
+        {
+          "question": "Are they suitable for dressy occasions?",
+          "answer": "Yes, these Chelsea boots can be dressed up or down for various occasions."
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Leather Oxford Shoes",
+      "url": "",
+      "brand": "Timeless Classics",
+      "price": 129.99,
+      "rating": 4.7,
+      "is_trending": false,
+      "description": "Classic leather oxford shoes for a timeless appeal.",
+      "materials": "Genuine leather upper, leather lining, leather sole",
+      "color": "Brown",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Do these shoes require a break-in period?",
+          "answer": "Some customers may experience a short break-in period due to the sturdy construction of these shoes."
+        },
+        {
+          "question": "Can they be polished?",
+          "answer": "Yes, these shoes can be polished to maintain their appearance."
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Leather Monk Strap Shoes",
+      "url": "",
+      "brand": "Elegant Footwear",
+      "price": 149.99,
+      "rating": 4.8,
+      "is_trending": true,
+      "description": "Sophisticated leather monk strap shoes for a refined look.",
+      "materials": "Genuine leather upper, leather lining, leather sole",
+      "color": "Black",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Are these shoes suitable for wide feet?",
+          "answer": "These shoes have a standard width, but the adjustable monk strap allows for some flexibility in fit."
+        },
+        {
+          "question": "Do they come with a shoe horn?",
+          "answer": "Yes, each pair of shoes includes a complimentary shoe horn."
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Suede Oxford Shoes",
+      "url": "",
+      "brand": "Casual Elegance",
+      "price": 119.99,
+      "rating": 4.5,
+      "is_trending": false,
+      "description": "Stylish suede oxford shoes for a smart-casual look.",
+      "materials": "Suede upper, leather lining, rubber sole",
+      "color": "Navy Blue",
+      "customer_reviews": [],
+      "season": "Fall/Spring",
+      "faqs": [
+        {
+          "question": "Do these shoes require special care?",
+          "answer": "We recommend using a suede brush and protector spray to maintain the shoes' appearance."
+        },
+        {
+          "question": "Are they suitable for wide feet?",
+          "answer": "These shoes have a standard width, but the suede upper may stretch slightly over time for a more comfortable fit."
+        }
+      ]
+    },
+    {
+      "id": 28,
+
+      "name": "Leather Loafers",
+      "url": "",
+      "brand": "Classic Comfort",
+      "price": 99.99,
+      "rating": 4.6,
+      "is_trending": true,
+      "description": "Versatile leather loafers for effortless style.",
+      "materials": "Genuine leather upper, leather lining, rubber sole",
+      "color": "Brown",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Do these loafers run true to size?",
+          "answer": "Yes, these loafers typically run true to size."
+        },
+        {
+          "question": "Can they be worn with or without socks?",
+          "answer": "Yes, these loafers are versatile enough to be worn with or without socks."
+        }
+      ]
+    },
+    {
+      "id": 29,
+
+      "name": "Leather Wingtip Boots",
+      "url": "",
+      "brand": "Timeless Classics",
+      "price": 139.99,
+      "rating": 4.7,
+      "is_trending": false,
+      "description": "Classic leather wingtip boots for a vintage-inspired look.",
+      "materials": "Genuine leather upper, leather lining, rubber sole",
+      "color": "Black",
+      "customer_reviews": [],
+      "season": "Fall/Winter",
+      "faqs": [
+        {
+          "question": "Do these boots run true to size?",
+          "answer": "Yes, these boots typically run true to size."
+        },
+        {
+          "question": "Are they suitable for formal occasions?",
+          "answer": "Yes, these wingtip boots can be dressed up for formal events or worn casually."
+        }
+      ]
+    },
+    {
+      "id": 30,
+
+      "name": "Leather Dress Boots",
+      "url": "",
+      "brand": "Elegant Footwear",
+      "price": 159.99,
+      "rating": 4.8,
+      "is_trending": true,
+      "description": "Sophisticated leather dress boots for a polished look.",
+      "materials": "Genuine leather upper, leather lining, leather sole",
+      "color": "Brown",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Do these boots come with a shoe horn?",
+          "answer": "Yes, each pair of boots includes a complimentary shoe horn."
+        },
+        {
+          "question": "Are they suitable for wide feet?",
+          "answer": "These boots have a standard width, but the leather may stretch over time for a more comfortable fit."
+        }
+      ]
+    },
+    {
+      "id": 31,
+
+      "name": "Leather Chelsea Boots",
+      "url": "",
+      "brand": "Stylish Steps",
+      "price": 149.99,
+      "rating": 4.6,
+      "is_trending": true,
+      "description": "Fashionable leather Chelsea boots for a modern look.",
+      "materials": "Genuine leather upper, leather lining, rubber sole",
+      "color": "Black",
+      "customer_reviews": [],
+      "season": "Fall/Winter",
+      "faqs": [
+        {
+          "question": "Do these boots run true to size?",
+          "answer": "Yes, these boots typically run true to size."
+        },
+        {
+          "question": "Are they suitable for dressy occasions?",
+          "answer": "Yes, these Chelsea boots can be dressed up or down for various occasions."
+        }
+      ]
+    },
+    {
+      "id": 32,
+
+      "name": "Suede Desert Boots",
+      "url": "",
+      "brand": "Urban Explorer",
+      "price": 119.99,
+      "rating": 4.5,
+      "is_trending": false,
+      "description": "Stylish desert boots crafted from soft suede.",
+      "materials": "Suede upper, leather lining, crepe sole",
+      "color": "Sand",
+      "customer_reviews": [],
+      "season": "Fall/Spring",
+      "faqs": [
+        {
+          "question": "Can these boots be worn in wet weather?",
+          "answer": "While suede is not inherently waterproof, you can apply a waterproofing spray to protect these boots from light rain."
+        },
+        {
+          "question": "Do they provide good traction?",
+          "answer": "Yes, the crepe sole offers excellent traction on various surfaces."
+        }
+      ]
+    },
+    {
+      "id": 33,
+
+      "name": "Leather Mules",
+      "url": "",
+      "brand": "Chic Comfort",
+      "price": 89.99,
+      "rating": 4.4,
+      "is_trending": true,
+      "description": "Stylish leather mules for effortless chic.",
+      "materials": "Genuine leather upper, leather lining, rubber sole",
+      "color": "White",
+      "customer_reviews": [],
+      "season": "Spring/Summer",
+      "faqs": [
+        {
+          "question": "Do these mules run true to size?",
+          "answer": "Yes, these mules typically run true to size."
+        },
+        {
+          "question": "Are they suitable for all-day wear?",
+          "answer": "Yes, these mules feature a cushioned footbed for all-day comfort."
+        }
+      ]
+    },
+    {
+      "id": 34,
+
+      "name": "Suede Loafers",
+      "url": "",
+      "brand": "Casual Elegance",
+      "price": 79.99,
+      "rating": 4.3,
+      "is_trending": false,
+      "description": "Classic suede loafers for a sophisticated look.",
+      "materials": "Suede upper, leather lining, rubber sole",
+      "color": "Beige",
+      "customer_reviews": [],
+      "season": "Fall/Spring",
+      "faqs": [
+        {
+          "question": "Do these loafers require special care?",
+          "answer": "We recommend using a suede brush and protector spray to maintain the shoes' appearance."
+        },
+        {
+          "question": "Are they suitable for wide feet?",
+          "answer": "These loafers have a standard width, but the suede upper may stretch slightly over time for a more comfortable fit."
+        }
+      ]
+    },
+    {
+      "id": 35,
+
+      "name": "Leather Derby Shoes",
+      "url": "",
+      "brand": "Elegant Classics",
+      "price": 129.99,
+      "rating": 4.7,
+      "is_trending": true,
+      "description": "Timeless leather derby shoes for a classic look.",
+      "materials": "Genuine leather upper, leather lining, leather sole",
+      "color": "Brown",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Do these shoes require special care?",
+          "answer": "We recommend using a leather conditioner and polish to maintain the shoes' appearance."
+        },
+        {
+          "question": "Are they suitable for wide feet?",
+          "answer": "These shoes have a standard width, but the leather may stretch over time for a more comfortable fit."
+        }
+      ]
+    },
+    {
+      "id": 36,
+
+      "name": "Leather Chukka Boots",
+      "url": "",
+      "brand": "Urban Explorer",
+      "price": 139.99,
+      "rating": 4.6,
+      "is_trending": false,
+      "description": "Versatile leather chukka boots for a rugged yet refined look.",
+      "materials": "Genuine leather upper, leather lining, rubber sole",
+      "color": "Tan",
+      "customer_reviews": [],
+      "season": "Fall/Spring",
+      "faqs": [
+        {
+          "question": "Do these boots require a break-in period?",
+          "answer": "Some customers may experience a short break-in period due to the sturdy construction of these boots."
+        },
+        {
+          "question": "Can they be polished?",
+          "answer": "Yes, these boots can be polished to maintain their appearance."
+        }
+      ]
+    },
+    {
+      "id": 37,
+
+      "name": "Leather Oxford Brogues",
+      "url": "",
+      "brand": "Classic Elegance",
+      "price": 139.99,
+      "rating": 4.8,
+      "is_trending": true,
+      "description": "Sophisticated leather oxford brogues for a timeless look.",
+      "materials": "Genuine leather upper, leather lining, leather sole",
+      "color": "Black",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Do these brogues require special care?",
+          "answer": "We recommend using a leather conditioner and polish to maintain the shoes' appearance."
+        },
+        {
+          "question": "Are they suitable for wide feet?",
+          "answer": "These brogues have a standard width, but the leather may stretch over time for a more comfortable fit."
+        }
+      ]
+    },
+    {
+      "id": 38,
+
+      "name": "Leather Tassel Loafers",
+      "url": "",
+      "brand": "Timeless Classics",
+      "price": 119.99,
+      "rating": 4.7,
+      "is_trending": false,
+      "description": "Classic leather tassel loafers for a sophisticated touch.",
+      "materials": "Genuine leather upper, leather lining, leather sole",
+      "color": "Brown",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Do these loafers require special care?",
+          "answer": "We recommend using a leather conditioner and polish to maintain the shoes' appearance."
+        },
+        {
+          "question": "Are they suitable for wide feet?",
+          "answer": "These loafers have a standard width, but the leather may stretch over time for a more comfortable fit."
+        }
+      ]
+    },
+    {
+      "id": 39,
+
+      "name": "Suede Driving Shoes",
+      "url": "",
+      "brand": "Leisure Drive",
+      "price": 89.99,
+      "rating": 4.4,
+      "is_trending": true,
+      "description": "Stylish suede driving shoes for a relaxed yet sophisticated look.",
+      "materials": "Suede upper, leather lining, rubber sole",
+      "color": "Navy Blue",
+      "customer_reviews": [],
+      "season": "Spring/Summer",
+      "faqs": [
+        {
+          "question": "Do these shoes run true to size?",
+          "answer": "Yes, these shoes typically run true to size."
+        },
+        {
+          "question": "Are they suitable for long drives?",
+          "answer": "Yes, these driving shoes feature a comfortable design for extended wear."
+        }
+      ]
+    },
+    {
+      "id": 40,
+
+      "name": "Leather Monk Strap Shoes",
+      "url": "",
+      "brand": "Elegant Steps",
+      "price": 159.99,
+      "rating": 4.7,
+      "is_trending": false,
+      "description": "Classic leather monk strap shoes for a refined look.",
+      "materials": "Genuine leather upper, leather lining, leather sole",
+      "color": "Black",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Do these shoes come with a shoe horn?",
+          "answer": "Yes, each pair of shoes includes a complimentary shoe horn."
+        },
+        {
+          "question": "Are they suitable for wide feet?",
+          "answer": "These shoes have a standard width, but the adjustable monk strap allows for some flexibility in fit."
+        }
+      ]
+    },
+    {
+      "id": 41,
+
+      "name": "Leather Boat Shoes",
+      "url": "",
+      "brand": "Nautical Charm",
+      "price": 99.99,
+      "rating": 4.6,
+      "is_trending": true,
+      "description": "Classic leather boat shoes for a timeless nautical style.",
+      "materials": "Genuine leather upper, textile lining, rubber sole",
+      "color": "Brown",
+      "customer_reviews": [],
+      "season": "Spring/Summer",
+      "faqs": [
+        {
+          "question": "Do these shoes run true to size?",
+          "answer": "Yes, these shoes typically run true to size."
+        },
+        {
+          "question": "Are they suitable for boating?",
+          "answer": "Yes, these boat shoes feature a non-marking rubber sole for traction on deck."
+        }
+      ]
+    },
+    {
+      "id": 42,
+
+      "name": "Leather Penny Loafers",
+      "url": "",
+      "brand": "Classic Comfort",
+      "price": 109.99,
+      "rating": 4.5,
+      "is_trending": false,
+      "description": "Classic leather penny loafers for a timeless look.",
+      "materials": "Genuine leather upper, leather lining, leather sole",
+      "color": "Black",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Do these loafers require special care?",
+          "answer": "We recommend using a leather conditioner and polish to maintain the shoes' appearance."
+        },
+        {
+          "question": "Are they suitable for wide feet?",
+          "answer": "These loafers have a standard width, but the leather may stretch over time for a more comfortable fit."
+        }
+      ]
+    },
+    {
+      "id": 43,
+
+      "name": "Leather Chelsea Boots",
+      "url": "",
+      "brand": "Timeless Classics",
+      "price": 149.99,
+      "rating": 4.8,
+      "is_trending": true,
+      "description": "Stylish leather Chelsea boots for a versatile look.",
+      "materials": "Genuine leather upper, leather lining, rubber sole",
+      "color": "Brown",
+      "customer_reviews": [],
+      "season": "Fall/Winter",
+      "faqs": [
+        {
+          "question": "Do these boots run true to size?",
+          "answer": "Yes, these boots typically run true to size."
+        },
+        {
+          "question": "Are they suitable for dressy occasions?",
+          "answer": "Yes, these Chelsea boots can be dressed up or down for various occasions."
+        }
+      ]
+    },
+    {
+      "id": 44,
+
+      "name": "Leather Cap Toe Oxfords",
+      "url": "",
+      "brand": "Elegant Classics",
+      "price": 139.99,
+      "rating": 4.7,
+      "is_trending": false,
+      "description": "Classic leather cap toe oxfords for a polished look.",
+      "materials": "Genuine leather upper, leather lining, leather sole",
+      "color": "Black",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Do these oxfords require special care?",
+          "answer": "We recommend using a leather conditioner and polish to maintain the shoes' appearance."
+        },
+        {
+          "question": "Are they suitable for wide feet?",
+          "answer": "These oxfords have a standard width, but the leather may stretch over time for a more comfortable fit."
+        }
+      ]
+    },
+    {
+      "id": 45,
+
+      "name": "Suede Chukka Boots",
+      "url": "",
+      "brand": "Urban Explorer",
+      "price": 129.99,
+      "rating": 4.6,
+      "is_trending": true,
+      "description": "Versatile suede chukka boots for a rugged yet refined look.",
+      "materials": "Suede upper, leather lining, rubber sole",
+      "color": "Gray",
+      "customer_reviews": [],
+      "season": "Fall/Winter",
+      "faqs": [
+        {
+          "question": "Do these boots require a break-in period?",
+          "answer": "Some customers may experience a short break-in period due to the sturdy construction of these boots."
+        },
+        {
+          "question": "Can they be polished?",
+          "answer": "Yes, these boots can be polished to maintain their appearance."
+        }
+      ]
+    },
+    {
+      "id": 46,
+
+      "name": "Leather Wingtip Boots",
+      "url": "",
+      "brand": "Classic Elegance",
+      "price": 159.99,
+      "rating": 4.8,
+      "is_trending": false,
+      "description": "Sophisticated leather wingtip boots for a timeless look.",
+      "materials": "Genuine leather upper, leather lining, leather sole",
+      "color": "Brown",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Do these boots require special care?",
+          "answer": "We recommend using a leather conditioner and polish to maintain the shoes' appearance."
+        },
+        {
+          "question": "Are they suitable for wide feet?",
+          "answer": "These boots have a standard width, but the leather may stretch over time for a more comfortable fit."
+        }
+      ]
+    },
+    {
+      "id": 47,
+
+      "name": "Leather Brogue Boots",
+      "url": "",
+      "brand": "Urban Elegance",
+      "price": 179.99,
+      "rating": 4.9,
+      "is_trending": true,
+      "description": "Stylish leather brogue boots for a sophisticated look.",
+      "materials": "Genuine leather upper, leather lining, rubber sole",
+      "color": "Black",
+      "customer_reviews": [],
+      "season": "Fall/Winter",
+      "faqs": [
+        {
+          "question": "Do these boots have good ankle support?",
+          "answer": "Yes, the sturdy construction of these boots provides excellent ankle support."
+        },
+        {
+          "question": "Can they be worn with formal attire?",
+          "answer": "Yes, these brogue boots can be dressed up for formal occasions."
+        }
+      ]
+    },
+    {
+      "id": 48,
+
+      "name": "Suede Desert Boots",
+      "url": "",
+      "brand": "Casual Comfort",
+      "price": 99.99,
+      "rating": 4.5,
+      "is_trending": false,
+      "description": "Comfortable suede desert boots for casual wear.",
+      "materials": "Suede upper, textile lining, rubber sole",
+      "color": "Beige",
+      "customer_reviews": [],
+      "season": "Spring/Fall",
+      "faqs": [
+        {
+          "question": "Are these boots suitable for wide feet?",
+          "answer": "These boots have a standard width, but they may stretch over time for a more comfortable fit."
+        },
+        {
+          "question": "Can they be resoled?",
+          "answer": "Yes, these boots are resoleable."
+        }
+      ]
+    },
+    {
+      "id": 49,
+
+      "name": "Leather Chelsea Boots",
+      "url": "",
+      "brand": "Stylish Steps",
+      "price": 169.99,
+      "rating": 4.7,
+      "is_trending": true,
+      "description": "Versatile leather Chelsea boots for a fashionable look.",
+      "materials": "Genuine leather upper, leather lining, rubber sole",
+      "color": "Tan",
+      "customer_reviews": [],
+      "season": "All Seasons",
+      "faqs": [
+        {
+          "question": "Do these boots have good arch support?",
+          "answer": "Yes, these Chelsea boots provide decent arch support for all-day comfort."
+        },
+        {
+          "question": "Can they be polished?",
+          "answer": "Yes, these boots can be polished to maintain their appearance."
+        }
+      ]
+    },
+    {
+      "id": 50,
+
+      "name": "Canvas Espadrilles",
+      "url": "",
+      "brand": "Relaxing Vibes",
+      "price": 69.99,
+      "rating": 4.4,
+      "is_trending": true,
+      "description": "Lightweight canvas espadrilles for a laid-back vibe.",
+      "materials": "Canvas upper, jute midsole, rubber sole",
+      "color": "Navy Blue",
+      "customer_reviews": [],
+      "season": "Spring/Summer",
+      "faqs": [
+        {
+          "question": "Do these espadrilles have good ventilation?",
+          "answer": "Yes, the canvas upper provides excellent ventilation for warm weather."
+        },
+        {
+          "question": "Are they suitable for beach wear?",
+          "answer": "Yes, these espadrilles are perfect for strolling along the beach."
+        }
+      ]
     }
   ]
 }
