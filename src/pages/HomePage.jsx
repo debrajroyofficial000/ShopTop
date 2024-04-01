@@ -18,7 +18,7 @@ function HomePage() {
         <h2 className="text-xl lg:text-4xl font-semibold my-4">
           By Trending footwear
         </h2>
-        <div className="md:flex-row flex justify-center items-center gap-8 flex-col">
+        <div className="md:flex-row flex justify-center items-center gap-8 flex-col flex-wrap">
           <Suspense fallback={<h3>Loading ....</h3>}>
             <TrendingFootwear url={h1} text={"buy trending shoes"} />
           </Suspense>

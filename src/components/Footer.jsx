@@ -4,7 +4,7 @@ function Footer() {
       <section className="text-center text-white flex justify-center items-center">
         <p>
           <a href="https://github.com/debrajroyofficial000">
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
             <span className="mx-2">Github</span>
           </a>
         </p>
