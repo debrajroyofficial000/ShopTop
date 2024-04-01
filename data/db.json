@@ -1,0 +1,112 @@
+{
+  "shoes": [
+    {
+      "id": 1,
+      "name": "Classic Oxford",
+      "brand": "Sartorial",
+      "type": "Formal Shoes",
+      "price": 99.99,
+      "description": "Elegant leather oxford shoes perfect for formal occasions.",
+      "color": "Black",
+      "rating": 4.5,
+      "reviews": [
+        {
+          "id": 101,
+          "username": "JohnDoe",
+          "rating": 5,
+          "comment": "Great quality shoes, very comfortable."
+        },
+        {
+          "id": 102,
+          "username": "JaneSmith",
+          "rating": 4,
+          "comment": "Nice design, but a bit narrow for my feet."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Are these shoes true to size?",
+          "answer": "Yes, we recommend ordering your usual size."
+        },
+        {
+          "question": "Can these shoes be resoled?",
+          "answer": "Yes, they are resoleable."
+        }
+      ],
+      "treadings": "Smooth",
+      "seasonal": false
+    },
+    {
+      "id": 2,
+      "name": "Athletic Sneakers",
+      "brand": "Sportify",
+      "type": "Sneakers",
+      "price": 79.99,
+      "description": "Versatile sneakers designed for sports and everyday wear.",
+      "color": "White",
+      "rating": 4.8,
+      "reviews": [
+        {
+          "id": 201,
+          "username": "EmilyJohnson",
+          "rating": 5,
+          "comment": "Love these shoes! Very comfortable and stylish."
+        },
+        {
+          "id": 202,
+          "username": "MikeBrown",
+          "rating": 4.5,
+          "comment": "Great for running and walking."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Are these shoes good for running?",
+          "answer": "Yes, they provide excellent support for running."
+        },
+        {
+          "question": "Do they come in other colors?",
+          "answer": "Yes, they are available in black, blue, and red."
+        }
+      ],
+      "treadings": "Textured",
+      "seasonal": false
+    },
+    {
+      "id": 3,
+      "name": "Casual Loafers",
+      "brand": "Relaxo",
+      "type": "Loafers",
+      "price": 49.99,
+      "description": "Comfortable slip-on loafers for casual wear.",
+      "color": "Brown",
+      "rating": 4.3,
+      "reviews": [
+        {
+          "id": 301,
+          "username": "SarahWilson",
+          "rating": 4,
+          "comment": "Nice loafers, but the sole is a bit thin."
+        },
+        {
+          "id": 302,
+          "username": "AlexMiller",
+          "rating": 4.5,
+          "comment": "Great value for money, very comfortable."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Are these loafers true to size?",
+          "answer": "Yes, we recommend ordering your usual size."
+        },
+        {
+          "question": "Do they have arch support?",
+          "answer": "Yes, they provide decent arch support."
+        }
+      ],
+      "treadings": "Ribbed",
+      "seasonal": false
+    }
+  ]
+}
