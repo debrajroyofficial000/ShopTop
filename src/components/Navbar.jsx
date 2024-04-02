@@ -25,7 +25,7 @@ function Navbar() {
         <div className="h-1 rounded-md bg-dark_beige"></div>
       </div>
       <div
-        className={`absolute w-full right-0 z-0 top-full op-full bg-black md:hidden ${
+        className={`absolute w-1/2 right-0 z-0 top-full op-full bg-black md:hidden ${
           !isToggle && "hidden"
         }`}
       >

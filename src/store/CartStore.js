@@ -7,8 +7,7 @@ const useCartStore = create((set) => ({
     try {
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data.footwears);
-      set({ footwears: data, isLoading: false, isError: false });
+      if (data) set({ footwears: data, isLoading: false, isError: false });
     } catch (error) {
       set({ isLoading: false, isError: true });
     }
