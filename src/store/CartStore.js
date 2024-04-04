@@ -1,8 +1,9 @@
 import { create } from "zustand";
-const useCartStore = create((set) => ({
+const useCartStore = create((set, get) => ({
   footwears: [],
   isLoading: true,
   isError: false,
+  filteredFootwears: [],
   getFootwears: async (url) => {
     try {
       const response = await fetch(url);
@@ -11,6 +12,13 @@ const useCartStore = create((set) => ({
     } catch (error) {
       set({ isLoading: false, isError: true });
     }
+  },
+  getFilteredFootwears: (searched) => {
+    set({
+      filteredFootwears: get().footwears.filter((footwear) =>
+        footwear.name.toLowerCase().includes(searched.toLowerCase())
+      ),
+    });
   },
 }));
 

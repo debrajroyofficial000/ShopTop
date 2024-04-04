@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="z-10 bg-black py-4 fixed w-full bottom-0">
+    <footer className="bg-black py-4">
       <section className="text-center text-white flex justify-center items-center">
         <p>
           <a href="https://github.com/debrajroyofficial000">

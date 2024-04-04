@@ -9,7 +9,7 @@ export default {
       colors: {
         pastel: "#B3C8CF",
         sea: "#BED7DC",
-        beige: "#BED7DC",
+        beige: "#F1EEDC",
         dark_beige: "#E5DDC5",
       },
       backgroundImage: {
