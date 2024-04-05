@@ -4,7 +4,7 @@ import ProductLists from "../components/ProductLists";
 
 function ProductsPage() {
   return (
-    <section className="container h-full flex flex-col border p-2 ">
+    <section className="container h-full flex flex-col p-2 ">
       <SearchBox />
       <div className="grid grid-cols-5 gap-4 grow">
         <FilterBox />

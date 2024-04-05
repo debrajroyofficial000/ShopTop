@@ -1,4 +1,3 @@
-// import TrendingFootwear from "../components/TrendingFootwear";
 import TrendingFootwear from "../components/TrendingFootwear";
 import h1 from "../assets/h1.jpg";
 import h2 from "../assets/h2.jpg";

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import useCartStore from "../store/CartStore";
+import useProductStore from "../store/useProductStore";
 
 export default function SearchBox() {
   const [searched, setSearched] = useState("");
-  const { footwears, getFilteredFootwears } = useCartStore();
+  const { footwears, getFilteredFootwears } = useProductStore();
 
   useEffect(() => {
     getFilteredFootwears(searched);

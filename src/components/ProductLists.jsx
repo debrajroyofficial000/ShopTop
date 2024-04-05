@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import Pagination from "./Pagination";
-import ProductCard from "./ProductCard";
-import useCartStore from "../store/CartStore";
+import ViewProduct from "./ViewProduct";
+import useProductStore from "../store/useProductStore";
 function ProductLists() {
   const [page, setPage] = useState(1);
   const { getFootwears, isLoading, isError, filteredFootwears } =
-    useCartStore();
+    useProductStore();
 
   useEffect(() => {
     setTimeout(() => {
@@ -17,10 +17,10 @@ function ProductLists() {
   if (isError) return <h1>Something went wrong</h1>;
 
   return (
-    <div className="col-span-full md:col-span-4 flex flex-col border">
-      <div className="grow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+    <div className="col-span-full md:col-span-4 flex flex-col">
+      <div className="grow grid grid-cols-1 grid-rows-2 md:grid-cols-2 lg:grid-cols-5 gap-4">
         {filteredFootwears.slice(page * 10 - 10, page * 10).map((footwear) => (
-          <ProductCard key={footwear.id} product={footwear} />
+          <ViewProduct key={footwear.id} product={footwear} />
         ))}
       </div>
       <Pagination footwears={filteredFootwears} page={page} setPage={setPage} />
