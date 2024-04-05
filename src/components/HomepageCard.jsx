@@ -1,7 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
-function TrendingFootwear({ url, text }) {
+function HomepageCard({ url, text }) {
   return (
     <Link to={"/products"}>
       <div className="relative h-[300px] w-[400px hover:border-dark_beige border-2 rounded-md overflow-hidden">
@@ -19,4 +18,4 @@ function TrendingFootwear({ url, text }) {
   );
 }
 
-export default TrendingFootwear;
+export default HomepageCard;

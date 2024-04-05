@@ -1,9 +1,16 @@
-import TrendingFootwear from "../components/TrendingFootwear";
-import h1 from "../assets/h1.jpg";
-import h2 from "../assets/h2.jpg";
-import h3 from "../assets/h3.jpg";
-import h5 from "../assets/h5.jpg";
+import HomepageCard from "../components/HomepageCard";
+import cardImages from "../ImportCard";
+const cardData = [
+  "Buy trending shoes",
+  "20% off on your first buy",
+  "Collect seasonal collections",
+  "Your favorite brand",
+];
 function HomePage() {
+  const allCards = cardImages.map((url, index) => ({
+    url,
+    text: cardData[index],
+  }));
   return (
     <div>
       <header className="bg-headerImage h-[300px] bg-center bg-no-repeat bg-cover flex justify-center items-center">
@@ -13,14 +20,13 @@ function HomePage() {
         </h1>
       </header>
       <section className="">
-        <h2 className="text-xl lg:text-4xl font-semibold my-4">
-          By Trending footwear
+        <h2 className="text-xl lg:text-3xl font-semibold my-4">
+          Discover Our Latest Footwear Selection
         </h2>
         <div className="grid md:grid-cols-2 gap-4">
-          <TrendingFootwear url={h1} text={"buy trending shoes"} />
-          <TrendingFootwear url={h2} text={"20% off on your first buy"} />
-          <TrendingFootwear url={h3} text={"collect seasonal collections"} />
-          <TrendingFootwear url={h5} text={"your favorite brand"} />
+          {allCards.map((card, index) => (
+            <HomepageCard key={index} {...card} />
+          ))}
         </div>
       </section>
     </div>

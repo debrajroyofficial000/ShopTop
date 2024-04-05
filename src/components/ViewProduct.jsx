@@ -9,7 +9,7 @@ function ViewProduct({ product }) {
   };
 
   return (
-    <div className="border rounded p-4  md:rows-span-1 flex flex-col">
+    <div className="border rounded p-4 md:rows-span-1 flex flex-col">
       <div className="grow">
         <h2>{product.name}</h2>
         <h3>{product.price}</h3>
