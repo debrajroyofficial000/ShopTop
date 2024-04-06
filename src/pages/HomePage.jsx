@@ -1,5 +1,5 @@
 import HomepageCard from "../components/HomepageCard";
-import cardImages from "../ImportCard";
+import { cardImages } from "../Utils";
 const cardData = [
   "Buy trending shoes",
   "20% off on your first buy",

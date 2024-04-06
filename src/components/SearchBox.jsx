@@ -3,10 +3,10 @@ import useProductStore from "../store/useProductStore";
 
 export default function SearchBox() {
   const [searched, setSearched] = useState("");
-  const { footwears, getFilteredFootwears } = useProductStore();
+  const { footwears, getSearchedFootwears } = useProductStore();
 
   useEffect(() => {
-    getFilteredFootwears(searched);
+    getSearchedFootwears(searched);
   }, [footwears, searched]);
 
   return (

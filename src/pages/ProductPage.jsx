@@ -5,7 +5,6 @@ import { useMemo } from "react";
 import ProductFAQ from "../components/ProductFAQ";
 function ProductPage() {
   const { id } = useParams();
-  console.log(typeof id);
   const { viewedProduct, filteredFootwears } = useProductStore();
   const similarProducts = useMemo(() => {
     return filteredFootwears.filter(

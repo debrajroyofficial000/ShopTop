@@ -17,7 +17,7 @@ const useProductStore = create(
           set({ isLoading: false, isError: true });
         }
       },
-      getFilteredFootwears: (searched) => {
+      getSearchedFootwears: (searched) => {
         set({
           filteredFootwears: get().footwears.filter((footwear) =>
             footwear.name.toLowerCase().includes(searched.toLowerCase())
@@ -28,13 +28,48 @@ const useProductStore = create(
       addViewedProduct: (prod) => {
         set({ viewedProduct: prod });
       },
+
+      addMaxPriceFilter: (maxPrice) => {
+        set({
+          footwears: get().footwears.filter(
+            (footwear) => footwear.price <= maxPrice
+          ),
+        });
+      },
+      addRatingFilter: (rating) => {
+        set({
+          footwears: get().footwears.filter(
+            (footwear) => parseInt(footwear.rating) === rating
+          ),
+        });
+      },
+      addColorFilter: (color) => {
+        set({
+          footwears: get().footwears.filter(
+            (footwear) => footwear.color <= color
+          ),
+        });
+      },
     }),
     {
-      name: "viewed-product",
+      name: "product-store",
+      partialize: (state) => ({
+        viewedProduct: state.viewedProduct,
+        filteredFootwears: state.filteredFootwears,
+      }),
       storage: createJSONStorage(() => localStorage),
-      partialize: (state) => ({ viewedProduct: state.viewedProduct }),
     }
   )
 );
 
 export default useProductStore;
+/**set({
+          filteredFootwears: get().filteredFootwears.filter(
+            (footwear) => rating > 0 && parseInt(footwear.rating) === rating
+          ),
+        });
+        set({
+          filteredFootwears: get().filteredFootwears.filter(
+            (footwear) => color !== "" && footwear.color <= color
+          ),
+        }); */

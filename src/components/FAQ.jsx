@@ -10,7 +10,7 @@ function FAQ({ faq }) {
         <p className="text-xl font-semibold">{faq.question}</p>
         <span>
           {isOpen ? (
-            <i class="fa-solid fa-angle-up"></i>
+            <i className="fa-solid fa-angle-up"></i>
           ) : (
             <i className="fa-solid fa-angle-down"></i>
           )}
