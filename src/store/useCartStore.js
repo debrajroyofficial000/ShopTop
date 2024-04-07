@@ -6,6 +6,12 @@ const useCartStore = create((set, get) => ({
       cartFootwears: [...prev.cartFootwears, data],
     }));
   },
+  removeCartFootwears: () => {
+    set({
+      cartFootwears: [],
+    });
+  },
+
   incrementItemQty: (id) => {
     set({
       cartFootwears: get().cartFootwears.map((footwear) =>
