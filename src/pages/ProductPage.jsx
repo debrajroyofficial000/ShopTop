@@ -1,9 +1,14 @@
+import { Link } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 import { useParams } from "react-router-dom";
 import useProductStore from "../store/useProductStore";
 import ViewProduct from "../components/ViewProduct";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import ProductFAQ from "../components/ProductFAQ";
+import useCartStore from "../store/useCartStore";
+
 function ProductPage() {
+  const [addedToCart, setAddedToCart] = useState(false);
   const { id } = useParams();
   const { viewedProduct, filteredFootwears } = useProductStore();
   const similarProducts = useMemo(() => {
@@ -13,6 +18,20 @@ function ProductPage() {
         footwear.id !== viewedProduct.id
     );
   }, [viewedProduct, filteredFootwears]);
+
+  const { addCartFootwears } = useCartStore();
+
+  const handleAddToCart = () => {
+    if (addedToCart === false) {
+      addCartFootwears({
+        id: uuidv4(),
+        name: viewedProduct.name,
+        price: viewedProduct.price,
+        qty: 1,
+      });
+      setAddedToCart(true);
+    }
+  };
 
   const { url, name, brand, color, description, rating, price, faqs } =
     viewedProduct;
@@ -36,9 +55,21 @@ function ProductPage() {
             </p>
           </div>
         </div>
-        <button className="px-4 py-2 cursor-pointer border rounded bg-beige hover:bg-dark_beige">
-          Add to cart
-        </button>
+        {addedToCart === false ? (
+          <button
+            className="px-4 py-2 cursor-pointer border rounded bg-beige hover:bg-dark_beige"
+            onClick={handleAddToCart}
+          >
+            Add to cart
+          </button>
+        ) : (
+          <Link
+            to="/cart"
+            className="px-4 py-2 cursor-pointer border rounded bg-beige hover:bg-dark_beige"
+          >
+            Go to Cart
+          </Link>
+        )}
       </div>
       <section className="mt-4">
         <h3 className="mb-2 text-2xl font-semibold">FAQs</h3>

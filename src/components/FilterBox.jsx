@@ -6,15 +6,21 @@ function FilterBox() {
   const [rating, setRating] = useState(0);
   const [color, setColor] = useState("");
 
-  const { addMaxPriceFilter, addRatingFilter, addColorFilter } =
+  const { addMaxPriceFilter, addRatingFilter, addColorFilter, resetFilter } =
     useProductStore();
   const handleApplyFilter = () => {
     if (maxPrice > 0) addMaxPriceFilter(maxPrice);
     if (parseInt(rating) > 0) addRatingFilter(parseInt(rating));
-    if (color !== "") addColorFilter(color);
+    if (color) addColorFilter(color);
   };
 
-  console.log(rating);
+  const handleResetFilter = () => {
+    setColor("");
+    setRating(0);
+    setMaxPrice(0);
+    resetFilter();
+  };
+
   return (
     <div className="col-span-full md:col-span-1">
       <h2 className="text-2xl font-semibold">Filters</h2>
@@ -66,6 +72,12 @@ function FilterBox() {
         onClick={handleApplyFilter}
       >
         Apply
+      </button>
+      <button
+        className="px-4 py-2 font-semibold border rounded-sm bg-beige hover:bg-dark_beige"
+        onClick={handleResetFilter}
+      >
+        Reset
       </button>
     </div>
   );

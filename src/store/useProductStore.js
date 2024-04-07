@@ -24,31 +24,34 @@ const useProductStore = create(
           ),
         });
       },
-
       addViewedProduct: (prod) => {
         set({ viewedProduct: prod });
       },
-
       addMaxPriceFilter: (maxPrice) => {
-        set({
-          footwears: get().footwears.filter(
+        set((prev) => ({
+          filteredFootwears: prev.filteredFootwears.filter(
             (footwear) => footwear.price <= maxPrice
           ),
-        });
+        }));
       },
       addRatingFilter: (rating) => {
-        set({
-          footwears: get().footwears.filter(
-            (footwear) => parseInt(footwear.rating) === rating
-          ),
-        });
+        if (rating > 0) {
+          set((prev) => ({
+            filteredFootwears: prev.filteredFootwears.filter(
+              (footwear) => parseInt(footwear.rating) === rating
+            ),
+          }));
+        }
       },
       addColorFilter: (color) => {
-        set({
-          footwears: get().footwears.filter(
-            (footwear) => footwear.color <= color
+        set((prev) => ({
+          filteredFootwears: prev.filteredFootwears.filter(
+            (footwear) => footwear.color.toLowerCase() === color.toLowerCase()
           ),
-        });
+        }));
+      },
+      resetFilter: () => {
+        set({ filteredFootwears: get().footwears });
       },
     }),
     {
@@ -63,13 +66,3 @@ const useProductStore = create(
 );
 
 export default useProductStore;
-/**set({
-          filteredFootwears: get().filteredFootwears.filter(
-            (footwear) => rating > 0 && parseInt(footwear.rating) === rating
-          ),
-        });
-        set({
-          filteredFootwears: get().filteredFootwears.filter(
-            (footwear) => color !== "" && footwear.color <= color
-          ),
-        }); */
